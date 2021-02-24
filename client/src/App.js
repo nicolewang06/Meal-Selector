@@ -19,10 +19,10 @@ class App extends React.Component {
             <nav>
               <ul className='link-header'>
                 <li>
-                  <Link to="/">Meal Selector</Link>
+                  <Link to="/">Meal Selector</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🍴 &nbsp;&nbsp;
                 </li>
                 <li>
-                  <Link to="/recipes">Recipes</Link>
+                  <Link to="/recipes">Recipes</Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🍴&nbsp;&nbsp;
                 </li>
                 <li>
                   <Link to="/create_recipe">Create Recipe</Link>

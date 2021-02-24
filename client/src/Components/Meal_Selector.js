@@ -32,18 +32,38 @@ function Meal_Selector() {
 
 function Recipe({ recipe }) {
     return(
-        <div>
-            <form>
-                <span>
-                    <ul>
-                        <b>Name:</b> { recipe.name }<br></br>
-                        <b>Cuisine:</b> { recipe.cuisine }<br></br>
-                        <b>Ingredients:</b> { recipe.ingredient1 }, { recipe.ingredient2 }, { recipe.ingredient3 }, { recipe.ingredient4 }, { recipe.ingredient5 }<br></br>
-                        <a href={ recipe.url }>{ recipe.url }</a><br></br>
-                    </ul>
-                </span>
+        <div className="recipe">
+            <form id="recipeForm">
+                <div id="recipe">
+                    <div id="cuisine"><div id="cuisineName"> { recipe.cuisine }</div></div>
+                    <div id="recipeDetailsContainer">
+                        <div id="recipeDetails">
+                            <div>{ recipe.name }</div>
+                            <div>
+                                <table id="ingredients">
+                                    <tr>
+                                        <td>☐ { recipe.ingredient1 }</td>
+                                        <td>☐ { recipe.ingredient4 }</td>
+                                    </tr>
+                                    <tr>
+                                        <td>☐ { recipe.ingredient2 }</td>
+                                        <td>☐ { recipe.ingredient5 }</td>
+                                    </tr>
+                                    <tr>
+                                        <td>☐ { recipe.ingredient3 }</td>
+                                    </tr>
+                                    <tr>
+                                        <td colSpan="2"><a id="recipeUrl" href={ recipe.url }>{ recipe.url }</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
+
+        
     )
 }
 
