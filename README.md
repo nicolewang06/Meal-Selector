@@ -6,3 +6,5 @@ App that stores recipes and helps user randomly select their next cooked meal
 * Style each individual recipe card
 * Create user/password database for individualized usage
 * Conditionalize ingredients and formatting based on number of entered ingredients
+
+### 
